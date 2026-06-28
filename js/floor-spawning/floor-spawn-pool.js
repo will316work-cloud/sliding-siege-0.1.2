@@ -131,10 +131,49 @@ var FLOOR_SPAWN_POOLS = [
       defaultTypeByDimension: { '1x1': 'standard' }
     }
   },
-  {
+   {
     floorRanges: [[2,2]],
-    widthRange: [5,6],     // NEW
-    heightRange: [5,6],    // NEW
+    widthRange: [6,8],     // NEW
+    heightRange: [4,5],    // NEW
+    maxSizeTypeCounts: {},
+    typeCaps: {},
+    initialPool: {
+      randomSpawnCountChances: [
+        { counts: [6,7,8], chance: 1.0 }
+      ],
+      dimensionChances: [
+        { dimension: '1x1', chance: 1.0 }
+      ],
+      transparentChance: 0,
+      typeWeightsByDimension: {
+        '1x1': [ ['standard', 1.0] ]
+      },
+      typeWeightsByDimensionTransparent: {
+        '1x1': []
+      },
+      defaultTypeByDimension: { '1x1': 'standard' }
+    },
+    midFloorPool: {
+      randomSpawnCountChances: [
+        { counts: [1], chance: 1.0 }
+      ],
+      dimensionChances: [
+        { dimension: '1x1', chance: 1.0 }
+      ],
+      transparentChance: 0,
+      typeWeightsByDimension: {
+        '1x1': [ ['standard', 1.0] ]
+      },
+      typeWeightsByDimensionTransparent: {
+        '1x1': []
+      },
+      defaultTypeByDimension: { '1x1': 'standard' }
+    }
+  },
+  {
+    floorRanges: [[3,3]],
+    widthRange: [6],     // NEW
+    heightRange: [6],    // NEW
     maxSizeTypeCounts: {},
     typeCaps: {},
     initialPool: {
@@ -146,7 +185,7 @@ var FLOOR_SPAWN_POOLS = [
       ],
       transparentChance: 0,
       typeWeightsByDimension: {
-        '1x1': [ ['rolly', 0.9], ['standard', 1.0] ]
+        '1x1': [ ['rolly', 0.6], ['standard', 1.0] ]
       },
       typeWeightsByDimensionTransparent: {
         '1x1': []
@@ -155,16 +194,14 @@ var FLOOR_SPAWN_POOLS = [
     },
     midFloorPool: {
       randomSpawnCountChances: [
-        { counts: [3], chance: 0.125 },
-        { counts: [2], chance: 0.4 },
-        { counts: [1], chance: 1.0 }
+         { counts: [1,2], chance: 1.0 }
       ],
       dimensionChances: [
         { dimension: '1x1', chance: 1.0 }
       ],
       transparentChance: 0,
       typeWeightsByDimension: {
-        '1x1': [ ['rolly', 0.9], ['standard', 1.0] ]
+        '1x1': [ ['rolly', 0.75], ['standard', 1.0] ]
       },
       typeWeightsByDimensionTransparent: {
         '1x1': []
@@ -173,7 +210,7 @@ var FLOOR_SPAWN_POOLS = [
     }
   },
   {
-    floorRanges: [[3,3]],
+    floorRanges: [[4,4]],
     widthRange: [6,6],     // NEW
     heightRange: [6,6],    // NEW
     maxSizeTypeCounts: {},
@@ -212,7 +249,7 @@ var FLOOR_SPAWN_POOLS = [
     }
   },
   {
-    floorRanges: [[4,4]],
+    floorRanges: [[5,5]],
     widthRange: [6,7],     // NEW
     heightRange: [6,7],    // NEW
     maxSizeTypeCounts: {},
@@ -251,7 +288,7 @@ var FLOOR_SPAWN_POOLS = [
     }
   },
   {
-    floorRanges: [[5,5]],
+    floorRanges: [[6,6]],
     widthRange: [7,7],     // NEW
     heightRange: [7,7],    // NEW
     maxSizeTypeCounts: { '2x2': 1 },
@@ -299,7 +336,7 @@ var FLOOR_SPAWN_POOLS = [
     // additions beyond the original game's actual spawn behavior (see
     // file header caveat), Siren (3x3, capped at 2 alive per
     // instruction) and Sprite (1x1) at conservative low chances.
-    floorRanges: [[6, Infinity]],
+    floorRanges: [[7, Infinity]],
     widthRange: [6,8],     // NEW
     heightRange: [7,8],    // NEW
     maxSizeTypeCounts: {},
