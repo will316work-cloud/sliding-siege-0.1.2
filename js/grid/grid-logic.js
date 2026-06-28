@@ -342,7 +342,12 @@ function revertLastShift() {
 }
 
 function gridIsCompletelyOccupied() {
-  return aliveEnemyCount() >= state.rows * state.cols;
+  for (var r=0; r<state.rows; r++) {
+    for (var c=0; c<state.cols; c++) {
+      if (state.grid[r][c].length === 0) return false;   // CHANGED — was aliveEnemyCount() >= state.rows*state.cols
+    }
+  }
+  return true;
 }
 
 // Shared click-cycling state lives on `state` (state.lastClickedCell /
