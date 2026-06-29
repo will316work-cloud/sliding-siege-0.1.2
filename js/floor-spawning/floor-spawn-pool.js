@@ -876,6 +876,7 @@ var FLOOR_SPAWN_POOLS = [
             { counts: [6,7], chance: 1.0 }
          ],
          dimensionChances: [
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0.7,
@@ -894,6 +895,7 @@ var FLOOR_SPAWN_POOLS = [
             { counts: [1,2], chance: 1.0 }
          ],
          dimensionChances: [
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0.7,
