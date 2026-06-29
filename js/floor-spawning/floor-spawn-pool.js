@@ -642,7 +642,7 @@ var FLOOR_SPAWN_POOLS = [
             { counts: [6,7], chance: 1.0 }
          ],
          dimensionChances: [
-            { dimension: '2x2', chance: 0.4 },
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0,
@@ -663,7 +663,7 @@ var FLOOR_SPAWN_POOLS = [
             { counts: [1], chance: 1.0 }
          ],
          dimensionChances: [
-            { dimension: '2x2', chance: 0.4 },
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0,
@@ -689,7 +689,7 @@ var FLOOR_SPAWN_POOLS = [
          ],
          dimensionChances: [
             { dimension: '3x3', chance: 1.0 },
-            { dimension: '2x2', chance: 0.4 },
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0,
@@ -711,7 +711,7 @@ var FLOOR_SPAWN_POOLS = [
             { counts: [1], chance: 1.0 }
          ],
          dimensionChances: [
-            { dimension: '2x2', chance: 0.4 },
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0,
@@ -737,7 +737,7 @@ var FLOOR_SPAWN_POOLS = [
          ],
          dimensionChances: [
             { dimension: '3x3', chance: 0.15 },
-            { dimension: '2x2', chance: 0.4 },
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0,
@@ -760,7 +760,7 @@ var FLOOR_SPAWN_POOLS = [
          ],
          dimensionChances: [
             { dimension: '3x3', chance: 0.15 },
-            { dimension: '2x2', chance: 0.4 },
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0,
@@ -827,7 +827,7 @@ var FLOOR_SPAWN_POOLS = [
          ],
          dimensionChances: [
             { dimension: '3x3', chance: 1.0 },
-            { dimension: '2x2', chance: 0.4 },
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0,
@@ -850,7 +850,7 @@ var FLOOR_SPAWN_POOLS = [
          ],
          dimensionChances: [
             { dimension: '3x3', chance: 0.15 },
-            { dimension: '2x2', chance: 0.4 },
+            { dimension: '2x2', chance: 0.3 },
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0,
