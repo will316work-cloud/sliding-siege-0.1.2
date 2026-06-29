@@ -138,7 +138,7 @@ var FLOOR_SPAWN_POOLS = [
       maxSizeTypeCounts: {},
       typeCaps: {},
       initialPool: {
-      randomSpawnCountChances: [
+         randomSpawnCountChances: [
             { counts: [6,7,8], chance: 1.0 }
          ],
          dimensionChances: [
@@ -233,8 +233,8 @@ var FLOOR_SPAWN_POOLS = [
       },
       midFloorPool: {
          randomSpawnCountChances: [
-            { counts: [3], chance: 0.05 }
-            { counts: [2], chance: 0.2 }
+            { counts: [3], chance: 0.05 },
+            { counts: [2], chance: 0.2 },
             { counts: [1], chance: 1.0 }
          ],
          dimensionChances: [
@@ -274,7 +274,7 @@ var FLOOR_SPAWN_POOLS = [
       },
       midFloorPool: {
          randomSpawnCountChances: [
-            { counts: [2], chance: 0.4 }
+            { counts: [2], chance: 0.4 },
             { counts: [1], chance: 1.0 }
          ],
          dimensionChances: [
@@ -314,8 +314,8 @@ var FLOOR_SPAWN_POOLS = [
       },
       midFloorPool: {
          randomSpawnCountChances: [
-            { counts: [1], chance: 0.4 }
-            { counts: [2], chance: 0.6 }
+            { counts: [1], chance: 0.4 },
+            { counts: [2], chance: 0.6 },
             { counts: [3], chance: 1.0 }
          ],
          dimensionChances: [
@@ -418,7 +418,7 @@ var FLOOR_SPAWN_POOLS = [
       widthRange: [6,7],
       heightRange: [6,7],
       maxSizeTypeCounts: {},
-      typeCaps: { bomb : 1 },
+      typeCaps: { bomb: 1 },
       initialPool: {
          randomSpawnCountChances: [
             { counts: [7,8,9], chance: 1.0 }
@@ -428,7 +428,7 @@ var FLOOR_SPAWN_POOLS = [
          ],
          transparentChance: 0,
          typeWeightsByDimension: {
-            '1x1': [ ['bomb', 1.0] ['slime', 0.33], ['rolly', 0.5] ]
+            '1x1': [ ['bomb', 1.0], ['slime', 0.33], ['rolly', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -446,7 +446,7 @@ var FLOOR_SPAWN_POOLS = [
          ],
          transparentChance: 0,
          typeWeightsByDimension: {
-            '1x1': [ ['bomb', 0.2] ['slime', 0.33], ['rolly', 0.5] ]
+            '1x1': [ ['bomb', 0.2], ['slime', 0.33], ['rolly', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -456,8 +456,8 @@ var FLOOR_SPAWN_POOLS = [
    },
    {
       floorRanges: [[11,12]],
-      widthRange: [6,7,8],
-      heightRange: [6,7,8],
+      widthRange: [6,8],
+      heightRange: [6,8],
       maxSizeTypeCounts: {},
       typeCaps: {},
       initialPool: {
@@ -469,7 +469,7 @@ var FLOOR_SPAWN_POOLS = [
          ],
          transparentChance: 0,
          typeWeightsByDimension: {
-            '1x1': [ ['bomb', 0.15] ['slime', 0.33], ['rolly', 0.5] ]
+            '1x1': [ ['bomb', 0.15], ['slime', 0.33], ['rolly', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -480,14 +480,14 @@ var FLOOR_SPAWN_POOLS = [
          randomSpawnCountChances: [
             { counts: [4], chance: 0.1 },
             { counts: [3], chance: 0.33 },
-            { counts: [2], chance: 1.0 },
+            { counts: [2], chance: 1.0 }
          ],
          dimensionChances: [
             { dimension: '1x1', chance: 1.0 }
          ],
          transparentChance: 0,
          typeWeightsByDimension: {
-            '1x1': [ ['bomb', 0.15] ['slime', 0.33], ['rolly', 0.5] ]
+            '1x1': [ ['bomb', 0.15], ['slime', 0.33], ['rolly', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -512,7 +512,7 @@ var FLOOR_SPAWN_POOLS = [
          transparentChance: 0,
          typeWeightsByDimension: {
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '2x2': [],
@@ -531,7 +531,7 @@ var FLOOR_SPAWN_POOLS = [
          ],
          transparentChance: 0,
          typeWeightsByDimension: {
-            '1x1': [ ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -556,7 +556,7 @@ var FLOOR_SPAWN_POOLS = [
          transparentChance: 0,
          typeWeightsByDimension: {
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '2x2': [],
@@ -577,7 +577,7 @@ var FLOOR_SPAWN_POOLS = [
          transparentChance: 0,
          typeWeightsByDimension: {
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -590,7 +590,7 @@ var FLOOR_SPAWN_POOLS = [
       widthRange: [6,6],
       heightRange: [6,6],
       maxSizeTypeCounts: {},
-      typeCaps: {mage : 2},
+      typeCaps: { mage: 2 },
       initialPool: {
          randomSpawnCountChances: [
             { counts: [6,7], chance: 1.0 }
@@ -602,7 +602,7 @@ var FLOOR_SPAWN_POOLS = [
          transparentChance: 0,
          typeWeightsByDimension: {
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ [['mage' : 1.0], ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5]]
+            '1x1': [ ['mage', 1.0], ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '2x2': [],
@@ -623,7 +623,7 @@ var FLOOR_SPAWN_POOLS = [
          transparentChance: 0,
          typeWeightsByDimension: {
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['mage' : 0.75], ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5]]
+            '1x1': [ ['mage', 0.75], ['bomb', 0.15], ['rolly', 0.3], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -633,8 +633,8 @@ var FLOOR_SPAWN_POOLS = [
    },
    {
       floorRanges: [[17,19]],
-      widthRange: [5,6,7],
-      heightRange: [5,6,7],
+      widthRange: [5,7],
+      heightRange: [5,7],
       maxSizeTypeCounts: {},
       typeCaps: {},
       initialPool: {
@@ -648,7 +648,7 @@ var FLOOR_SPAWN_POOLS = [
          transparentChance: 0,
          typeWeightsByDimension: {
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['bomb', 0.1], ['mage' : 0.2], ['rolly', 0.33], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.1], ['mage', 0.2], ['rolly', 0.33], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '2x2': [],
@@ -669,7 +669,7 @@ var FLOOR_SPAWN_POOLS = [
          transparentChance: 0,
          typeWeightsByDimension: {
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['bomb', 0.1], ['mage' : 0.2], ['rolly', 0.33], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.1], ['mage', 0.2], ['rolly', 0.33], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -682,7 +682,7 @@ var FLOOR_SPAWN_POOLS = [
       widthRange: [8,8],
       heightRange: [8,8],
       maxSizeTypeCounts: { '3x3': 1 },
-      typeCaps: { siren : 1 },
+      typeCaps: { siren: 1 },
       initialPool: {
          randomSpawnCountChances: [
             { counts: [8,9], chance: 1.0 }
@@ -696,7 +696,7 @@ var FLOOR_SPAWN_POOLS = [
          typeWeightsByDimension: {
             '3x3': [ ['siren', 1.0] ],
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['bomb', 0.1], ['mage' : 0.2], ['rolly', 0.33], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.1], ['mage', 0.2], ['rolly', 0.33], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '2x2': [],
@@ -717,7 +717,7 @@ var FLOOR_SPAWN_POOLS = [
          transparentChance: 0,
          typeWeightsByDimension: {
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['bomb', 0.1], ['mage' : 0.2], ['rolly', 0.33], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.1], ['mage', 0.2], ['rolly', 0.33], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -727,10 +727,10 @@ var FLOOR_SPAWN_POOLS = [
    },
    {
       floorRanges: [[21,22]],
-      widthRange: [7,8,9],
-      heightRange: [7,8,9],
+      widthRange: [7,9],
+      heightRange: [7,9],
       maxSizeTypeCounts: {},
-      typeCaps: { siren : 2 },
+      typeCaps: { siren: 2 },
       initialPool: {
          randomSpawnCountChances: [
             { counts: [8,9], chance: 1.0 }
@@ -744,7 +744,7 @@ var FLOOR_SPAWN_POOLS = [
          typeWeightsByDimension: {
             '3x3': [ ['siren', 1.0] ],
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['bomb', 0.1], ['mage' : 0.25], ['rolly', 0.33], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.1], ['mage', 0.25], ['rolly', 0.33], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '2x2': [],
@@ -767,7 +767,7 @@ var FLOOR_SPAWN_POOLS = [
          typeWeightsByDimension: {
             '3x3': [ ['siren', 1.0] ],
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['bomb', 0.1], ['mage' : 0.25], ['rolly', 0.33], ['slime', 0.5]]
+            '1x1': [ ['bomb', 0.1], ['mage', 0.25], ['rolly', 0.33], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -799,7 +799,7 @@ var FLOOR_SPAWN_POOLS = [
       },
       midFloorPool: {
          randomSpawnCountChances: [
-            { counts: [3], chance: 0.25 }
+            { counts: [3], chance: 0.25 },
             { counts: [1,2], chance: 1.0 }
          ],
          dimensionChances: [
@@ -819,7 +819,7 @@ var FLOOR_SPAWN_POOLS = [
       floorRanges: [[24,24]],
       widthRange: [7,8],
       heightRange: [7,8],
-      maxSizeTypeCounts: { '3x3' : 1 },
+      maxSizeTypeCounts: { '3x3': 1 },
       typeCaps: {},
       initialPool: {
          randomSpawnCountChances: [
@@ -834,7 +834,7 @@ var FLOOR_SPAWN_POOLS = [
          typeWeightsByDimension: {
             '3x3': [ ['siren', 1.0] ],
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['sprite', 0.3], ['bomb', 0.1], ['mage' : 0.2], ['rolly', 0.33], ['slime', 0.5]]
+            '1x1': [ ['sprite', 0.3], ['bomb', 0.1], ['mage', 0.2], ['rolly', 0.33], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '2x2': [],
@@ -857,7 +857,7 @@ var FLOOR_SPAWN_POOLS = [
          typeWeightsByDimension: {
             '3x3': [ ['siren', 1.0] ],
             '2x2': [ ['golem', 1.0] ],
-            '1x1': [ ['sprite', 0.3], ['bomb', 0.1], ['mage' : 0.2], ['rolly', 0.33], ['slime', 0.5]]
+            '1x1': [ ['sprite', 0.3], ['bomb', 0.1], ['mage', 0.2], ['rolly', 0.33], ['slime', 0.5] ]
          },
          typeWeightsByDimensionTransparent: {
             '1x1': []
@@ -870,7 +870,7 @@ var FLOOR_SPAWN_POOLS = [
       widthRange: [6,6],
       heightRange: [6,6],
       maxSizeTypeCounts: {},
-      typeCaps: {'ghost' : 2},
+      typeCaps: { ghost: 2 },
       initialPool: {
          randomSpawnCountChances: [
             { counts: [6,7], chance: 1.0 }
@@ -880,17 +880,17 @@ var FLOOR_SPAWN_POOLS = [
          ],
          transparentChance: 0.7,
          typeWeightsByDimension: {
-            '2x2': [ ['golem' : 1.0] ]
+            '2x2': [ ['golem', 1.0] ],
             '1x1': [ ['rolly', 1.0] ]
          },
          typeWeightsByDimensionTransparent: {
-            '1x1': [ ['ghost' : 1.0] ]
+            '1x1': [ ['ghost', 1.0] ]
          },
          defaultTypeByDimension: { '1x1': 'rolly' }
       },
       midFloorPool: {
          randomSpawnCountChances: [
-            { counts: [3], chance: 0.25 }
+            { counts: [3], chance: 0.25 },
             { counts: [1,2], chance: 1.0 }
          ],
          dimensionChances: [
@@ -898,47 +898,47 @@ var FLOOR_SPAWN_POOLS = [
          ],
          transparentChance: 0.7,
          typeWeightsByDimension: {
-            '2x2': [ ['golem' : 1.0] ]
+            '2x2': [ ['golem', 1.0] ],
             '1x1': [ ['rolly', 1.0] ]
          },
          typeWeightsByDimensionTransparent: {
-            '1x1': [ ['ghost' : 1.0] ]
+            '1x1': [ ['ghost', 1.0] ]
          },
          defaultTypeByDimension: { '1x1': 'rolly' }
       }
    },
    {
-      // Floor 6+: every 1x1 type unlocked, plus Golem (2x2) and, as new
+      // Floor 26+: every 1x1 type unlocked, plus Golem (2x2) and, as new
       // additions beyond the original game's actual spawn behavior (see
       // file header caveat), Siren (3x3, capped at 2 alive per
       // instruction) and Sprite (1x1) at conservative low chances.
       floorRanges: [[26, Infinity]],
-      widthRange: [6,8],     // NEW
-      heightRange: [7,8],    // NEW
+      widthRange: [6,8],
+      heightRange: [7,8],
       maxSizeTypeCounts: {},
       typeCaps: { siren: 2 },
       initialPool: {
-      randomSpawnCountChances: [
-         { counts: [8,9,10], chance: 0.4 },
-         { counts: [6,7], chance: 1.0 }
-      ],
-      dimensionChances: [
-         { dimension: '3x3', chance: 0.05 },
-         { dimension: '2x2', chance: 0.2 },
-         { dimension: '1x1', chance: 1.0 }
-      ],
-      transparentChance: 0,
-      typeWeightsByDimension: {
-         '3x3': [ ['siren', 1.0] ],
-         '2x2': [ ['golem', 1.0] ],
-         '1x1': [ ['standard', 0.2], ['slime', 0.25], ['bomb', 0.333], ['rolly', 0.5], ['mage', 0.7], ['sprite', 1.0] ]
-      },
-      typeWeightsByDimensionTransparent: {
-         '3x3': [],
-         '2x2': [],
-         '1x1': []
-      },
-      defaultTypeByDimension: { '3x3': 'siren', '2x2': 'golem', '1x1': 'standard' }
+         randomSpawnCountChances: [
+            { counts: [8,9,10], chance: 0.4 },
+            { counts: [6,7], chance: 1.0 }
+         ],
+         dimensionChances: [
+            { dimension: '3x3', chance: 0.05 },
+            { dimension: '2x2', chance: 0.2 },
+            { dimension: '1x1', chance: 1.0 }
+         ],
+         transparentChance: 0,
+         typeWeightsByDimension: {
+            '3x3': [ ['siren', 1.0] ],
+            '2x2': [ ['golem', 1.0] ],
+            '1x1': [ ['standard', 0.2], ['slime', 0.25], ['bomb', 0.333], ['rolly', 0.5], ['mage', 0.7], ['sprite', 1.0] ]
+         },
+         typeWeightsByDimensionTransparent: {
+            '3x3': [],
+            '2x2': [],
+            '1x1': []
+         },
+         defaultTypeByDimension: { '3x3': 'siren', '2x2': 'golem', '1x1': 'standard' }
       },
       midFloorPool: {
          randomSpawnCountChances: [
